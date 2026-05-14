@@ -91,6 +91,11 @@ body{
     margin-bottom:90px;
 }
 
+.post-link{
+    text-decoration:none;
+    color:#111;
+}
+
 .post-title{
     font-family:'Cormorant Garamond', serif;
     font-size:72px;
@@ -98,6 +103,11 @@ body{
     font-weight:600;
     letter-spacing:-3px;
     margin-bottom:20px;
+    transition:0.3s;
+}
+
+.post-link:hover .post-title{
+    opacity:0.55;
 }
 
 .post-author{
@@ -114,11 +124,29 @@ body{
     font-size:18px;
 }
 
+.read-more{
+    display:inline-block;
+    margin-top:30px;
+    text-decoration:none;
+    color:#111;
+    font-size:12px;
+    text-transform:uppercase;
+    letter-spacing:3px;
+    border:1px solid #111;
+    padding:12px 22px;
+    transition:0.3s;
+}
+
+.read-more:hover{
+    background:#111;
+    color:#f6f5f1;
+}
+
 .divider{
     width:70px;
     height:1px;
     background:#111;
-    margin-top:35px;
+    margin-top:40px;
 }
 
 /* FOOTER */
@@ -184,13 +212,19 @@ body{
 
     <main class="content">
 
-        <div class="section-label">Recent Essays</div>
+        <div class="section-label">
+            Recent Essays
+        </div>
+
+        <!-- POST 1 -->
 
         <article class="post">
 
-            <h1 class="post-title">
-                The House of Quiet Attention
-            </h1>
+            <a href="quiet-attention.html" class="post-link">
+                <h1 class="post-title">
+                    The House of Quiet Attention
+                </h1>
+            </a>
 
             <div class="post-author">
                 By Editorial Desk
@@ -201,15 +235,23 @@ body{
                 to slow the reader down rather than move them along.
             </p>
 
+            <a href="quiet-attention.html" class="read-more">
+                Read More
+            </a>
+
             <div class="divider"></div>
 
         </article>
 
+        <!-- POST 2 -->
+
         <article class="post">
 
-            <h1 class="post-title">
-                To the Margins
-            </h1>
+            <a href="to-the-margins.html" class="post-link">
+                <h1 class="post-title">
+                    To the Margins
+                </h1>
+            </a>
 
             <div class="post-author">
                 By Clara Wynn
@@ -220,15 +262,23 @@ body{
                 and typographic restraint in modern publishing.
             </p>
 
+            <a href="to-the-margins.html" class="read-more">
+                Read More
+            </a>
+
             <div class="divider"></div>
 
         </article>
 
+        <!-- POST 3 -->
+
         <article class="post">
 
-            <h1 class="post-title">
-                One Hundred Notes on Restraint
-            </h1>
+            <a href="restraint.html" class="post-link">
+                <h1 class="post-title">
+                    One Hundred Notes on Restraint
+                </h1>
+            </a>
 
             <div class="post-author">
                 By Julian Vale
@@ -238,6 +288,10 @@ body{
                 Removing decorative clutter until only the reading
                 experience remains.
             </p>
+
+            <a href="restraint.html" class="read-more">
+                Read More
+            </a>
 
             <div class="divider"></div>
 
