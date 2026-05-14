@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Bibliotheca</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#f6f5f1;
+    color:#111;
+    font-family:'Inter', sans-serif;
+    line-height:1.7;
+}
+
+.container{
+    display:grid;
+    grid-template-columns:280px 1fr;
+    min-height:100vh;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+    border-right:1px solid rgba(0,0,0,0.1);
+    padding:60px 40px;
+    position:sticky;
+    top:0;
+    height:100vh;
+}
+
+.logo{
+    font-family:'Cormorant Garamond', serif;
+    font-size:52px;
+    font-weight:600;
+    letter-spacing:-2px;
+    margin-bottom:20px;
+}
+
+.tagline{
+    font-size:14px;
+    color:#555;
+    max-width:180px;
+    margin-bottom:50px;
+}
+
+.nav{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.nav a{
+    text-decoration:none;
+    color:#111;
+    font-size:12px;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    transition:0.3s;
+}
+
+.nav a:hover{
+    opacity:0.5;
+}
+
+/* CONTENT */
+
+.content{
+    padding:80px 100px;
+}
+
+.section-label{
+    font-size:12px;
+    text-transform:uppercase;
+    letter-spacing:4px;
+    color:#666;
+    margin-bottom:60px;
+}
+
+.post{
+    margin-bottom:90px;
+}
+
+.post-title{
+    font-family:'Cormorant Garamond', serif;
+    font-size:72px;
+    line-height:0.95;
+    font-weight:600;
+    letter-spacing:-3px;
+    margin-bottom:20px;
+}
+
+.post-author{
+    font-size:12px;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    margin-bottom:25px;
+    color:#555;
+}
+
+.post-excerpt{
+    max-width:700px;
+    color:#444;
+    font-size:18px;
+}
+
+.divider{
+    width:70px;
+    height:1px;
+    background:#111;
+    margin-top:35px;
+}
+
+/* FOOTER */
+
+.footer{
+    border-top:1px solid rgba(0,0,0,0.1);
+    padding-top:40px;
+    margin-top:80px;
+    color:#555;
+    font-size:14px;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+    .container{
+        grid-template-columns:1fr;
+    }
+
+    .sidebar{
+        position:relative;
+        height:auto;
+        border-right:none;
+        border-bottom:1px solid rgba(0,0,0,0.1);
+    }
+
+    .content{
+        padding:50px 30px;
+    }
+
+    .post-title{
+        font-size:48px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <aside class="sidebar">
+
+        <div>
+            <div class="logo">Bibliotheca</div>
+
+            <p class="tagline">
+                A quiet black-and-white blog for essays, notes, and thoughtful writing.
+            </p>
+
+            <nav class="nav">
+                <a href="#">Writing</a>
+                <a href="#">Archive</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+
+    </aside>
+
+    <main class="content">
+
+        <div class="section-label">Recent Essays</div>
+
+        <article class="post">
+
+            <h1 class="post-title">
+                The House of Quiet Attention
+            </h1>
+
+            <div class="post-author">
+                By Editorial Desk
+            </div>
+
+            <p class="post-excerpt">
+                A meditation on rooms, pages, and digital spaces designed
+                to slow the reader down rather than move them along.
+            </p>
+
+            <div class="divider"></div>
+
+        </article>
+
+        <article class="post">
+
+            <h1 class="post-title">
+                To the Margins
+            </h1>
+
+            <div class="post-author">
+                By Clara Wynn
+            </div>
+
+            <p class="post-excerpt">
+                On the usefulness of white space, narrow columns,
+                and typographic restraint in modern publishing.
+            </p>
+
+            <div class="divider"></div>
+
+        </article>
+
+        <article class="post">
+
+            <h1 class="post-title">
+                One Hundred Notes on Restraint
+            </h1>
+
+            <div class="post-author">
+                By Julian Vale
+            </div>
+
+            <p class="post-excerpt">
+                Removing decorative clutter until only the reading
+                experience remains.
+            </p>
+
+            <div class="divider"></div>
+
+        </article>
+
+        <footer class="footer">
+
+            <p>
+                Designed as a minimalist editorial blog inspired by
+                book layouts and classic literary journals.
+            </p>
+
+        </footer>
+
+    </main>
+
+</div>
+
+</body>
+</html>
